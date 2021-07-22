@@ -1,0 +1,754 @@
+{
+  "href": "https://api.spotify.com/v1/users/12156061751/playlists?offset=0&limit=20",
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/26Dm0xIRg5vuz4qxnKlTC5"
+      },
+      "href": "https://api.spotify.com/v1/playlists/26Dm0xIRg5vuz4qxnKlTC5",
+      "id": "26Dm0xIRg5vuz4qxnKlTC5",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebbacb498a9c6149799f584e8db",
+          "width": null
+        }
+      ],
+      "name": "GOD",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjEsNWY2N2M2YzEyN2Q2NWE1OTZjNWYwYzMxZDE0ODYwZmRlYzMzMWVjYQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/26Dm0xIRg5vuz4qxnKlTC5/tracks",
+        "total": 18
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:26Dm0xIRg5vuz4qxnKlTC5"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1gQuf0RhSR24g5Qcv7GaBX"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1gQuf0RhSR24g5Qcv7GaBX",
+      "id": "1gQuf0RhSR24g5Qcv7GaBX",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb3081a8f2b586cab78ae2ba28",
+          "width": null
+        }
+      ],
+      "name": "2021 SUM",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTYwLDAyOTYxNDM2Njk4NjlkMjU0YWE0NzY2N2VjZTEwZTdiOTIxZjQxNDU=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1gQuf0RhSR24g5Qcv7GaBX/tracks",
+        "total": 186
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1gQuf0RhSR24g5Qcv7GaBX"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1trnpa0aCJANar4A8gXmHY"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1trnpa0aCJANar4A8gXmHY",
+      "id": "1trnpa0aCJANar4A8gXmHY",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb3b5fb6f4de4aad0df5c63aad",
+          "width": null
+        }
+      ],
+      "name": "2021 ALL",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzA4LDdiY2EzNGNiMmU2ZDZiNmU5MmE3MmE2MWQ3ZWRhODQ0MWE3NDI3ODc=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1trnpa0aCJANar4A8gXmHY/tracks",
+        "total": 2785
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1trnpa0aCJANar4A8gXmHY"
+    },
+    {
+      "collaborative": false,
+      "description": "EDM",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7Li2I1bN2L3IecLHpCFXlg"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7Li2I1bN2L3IecLHpCFXlg",
+      "id": "7Li2I1bN2L3IecLHpCFXlg",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb93885ad3971720182b2b45eb",
+          "width": null
+        }
+      ],
+      "name": "2021 GREEN",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NCw4YjA1MGY5MmQyZjg3NjEzYWU5ODIwMzdmODRlZTQwNjg5YjliOGYz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7Li2I1bN2L3IecLHpCFXlg/tracks",
+        "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7Li2I1bN2L3IecLHpCFXlg"
+    },
+    {
+      "collaborative": false,
+      "description": "DRIVE",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7gmsvKHC5kzIxcarCCRVn6"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7gmsvKHC5kzIxcarCCRVn6",
+      "id": "7gmsvKHC5kzIxcarCCRVn6",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb4f3f9ced7f403a5e1958e48f",
+          "width": null
+        }
+      ],
+      "name": "2021 BLACK",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NjIsYmExOGU1MjFlMmYyN2Q4MzQ5Y2IzN2I1ZDNlZjVmN2VmMWM5MmUxNQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7gmsvKHC5kzIxcarCCRVn6/tracks",
+        "total": 58
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7gmsvKHC5kzIxcarCCRVn6"
+    },
+    {
+      "collaborative": false,
+      "description": "STUDY",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1Q13z4EjPvheTc1Az0R2J2"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1Q13z4EjPvheTc1Az0R2J2",
+      "id": "1Q13z4EjPvheTc1Az0R2J2",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb2644be19aa8fd67b207e113f",
+          "width": null
+        }
+      ],
+      "name": "2021 WHITE",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OCwzZWJjYjBkMjM4OTUxOTAxOGFiZjdhZDMwZDQxYzM4ODk2ZTZiMzEz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1Q13z4EjPvheTc1Az0R2J2/tracks",
+        "total": 13
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1Q13z4EjPvheTc1Az0R2J2"
+    },
+    {
+      "collaborative": false,
+      "description": "DANCE PARTY",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0uAIJumuH69wa4vsU7PfUY"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0uAIJumuH69wa4vsU7PfUY",
+      "id": "0uAIJumuH69wa4vsU7PfUY",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb4c1d991ffe570c0f03cb4900",
+          "width": null
+        }
+      ],
+      "name": "2021 PURPLE",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzksZGE4NWZhNTdkYWJkNDcyMjQ2ZTk3N2FmNDk0ZjQ5YjUwMDhkNjFmMg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0uAIJumuH69wa4vsU7PfUY/tracks",
+        "total": 35
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0uAIJumuH69wa4vsU7PfUY"
+    },
+    {
+      "collaborative": false,
+      "description": "HAPPY",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2S9EyAjhI8J1QgXSRU7Bud"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2S9EyAjhI8J1QgXSRU7Bud",
+      "id": "2S9EyAjhI8J1QgXSRU7Bud",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb4d18ea9bf48454491fc80c2b",
+          "width": null
+        }
+      ],
+      "name": "2021 YELLOW",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzYsNzI1OTY4OWEyMGJlYzAyYTU4NWMyNzg1OTdhNjEyZDJjNjMyMDZiMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2S9EyAjhI8J1QgXSRU7Bud/tracks",
+        "total": 30
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2S9EyAjhI8J1QgXSRU7Bud"
+    },
+    {
+      "collaborative": false,
+      "description": "RAIN",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/14I5g5ByemOsWSVLi6Vv4G"
+      },
+      "href": "https://api.spotify.com/v1/playlists/14I5g5ByemOsWSVLi6Vv4G",
+      "id": "14I5g5ByemOsWSVLi6Vv4G",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb53fa43038119d07e657bd24e",
+          "width": null
+        }
+      ],
+      "name": "2021 BLUE",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDMsYTJhMmY3OWY4ZTQ0ZmRiMDkzNjc1YjcwZjkyNjFjNDQ1OTI1ZWQxZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/14I5g5ByemOsWSVLi6Vv4G/tracks",
+        "total": 37
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:14I5g5ByemOsWSVLi6Vv4G"
+    },
+    {
+      "collaborative": false,
+      "description": "MTFT",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1JqBDK1rxQA7pKBBZ7sd7s"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1JqBDK1rxQA7pKBBZ7sd7s",
+      "id": "1JqBDK1rxQA7pKBBZ7sd7s",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebbc796e585d106fc85e00bdbce",
+          "width": null
+        }
+      ],
+      "name": "2021 PINK",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTUsZDI2OTAwMjk2MWU4NDhkNzk1NjhmZDhlNGE3OTY1ODBiM2Y1M2I3OQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1JqBDK1rxQA7pKBBZ7sd7s/tracks",
+        "total": 11
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1JqBDK1rxQA7pKBBZ7sd7s"
+    },
+    {
+      "collaborative": false,
+      "description": "MTMOT",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0a4KuwvVeidLt1lZv4PI7M"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0a4KuwvVeidLt1lZv4PI7M",
+      "id": "0a4KuwvVeidLt1lZv4PI7M",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb52c935afd79ddee7ca7b2672",
+          "width": null
+        }
+      ],
+      "name": "2021 RED",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMsZTg2ZDUxYTAzY2M3Zjk1NTEzZTRhOTc4NDM5YjAwMGNhN2VmYWZkOA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0a4KuwvVeidLt1lZv4PI7M/tracks",
+        "total": 9
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0a4KuwvVeidLt1lZv4PI7M"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3iCFBbZMQBAsRSwYole5ll"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3iCFBbZMQBAsRSwYole5ll",
+      "id": "3iCFBbZMQBAsRSwYole5ll",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27305d9b34c8a670ec1447121c8ab67616d0000b27366b9bf56e2e057eed8ba6297ab67616d0000b27391295436bcc70bf9614487adab67616d0000b273c6aa6fca567129638c3c4355",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27305d9b34c8a670ec1447121c8ab67616d0000b27366b9bf56e2e057eed8ba6297ab67616d0000b27391295436bcc70bf9614487adab67616d0000b273c6aa6fca567129638c3c4355",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27305d9b34c8a670ec1447121c8ab67616d0000b27366b9bf56e2e057eed8ba6297ab67616d0000b27391295436bcc70bf9614487adab67616d0000b273c6aa6fca567129638c3c4355",
+          "width": 60
+        }
+      ],
+      "name": "rock",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTEsMzM3NjJjZjBkMzBkZGJhOTllM2Y0MTQ3Mzc0MmIwM2NlMTEzMTU2ZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3iCFBbZMQBAsRSwYole5ll/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3iCFBbZMQBAsRSwYole5ll"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/191fOxYB7E9V1RbpVppyyk"
+      },
+      "href": "https://api.spotify.com/v1/playlists/191fOxYB7E9V1RbpVppyyk",
+      "id": "191fOxYB7E9V1RbpVppyyk",
+      "images": [],
+      "name": "downloads",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MyxiY2UwZmNkMzBiMTQzNmZkOWRiZDBjMGViNDgzNWMyYTAwZmIwOWUx",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/191fOxYB7E9V1RbpVppyyk/tracks",
+        "total": 2
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:191fOxYB7E9V1RbpVppyyk"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2qUAaPzmbV5YzsZfZMmHeP"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2qUAaPzmbV5YzsZfZMmHeP",
+      "id": "2qUAaPzmbV5YzsZfZMmHeP",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730315efc555d5a157b0392652ab67616d0000b2730c053ee476f7ce576369241eab67616d0000b27395517befb15ad5d63af701abab67616d0000b273fb704b7e832b40f08c14629c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730315efc555d5a157b0392652ab67616d0000b2730c053ee476f7ce576369241eab67616d0000b27395517befb15ad5d63af701abab67616d0000b273fb704b7e832b40f08c14629c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730315efc555d5a157b0392652ab67616d0000b2730c053ee476f7ce576369241eab67616d0000b27395517befb15ad5d63af701abab67616d0000b273fb704b7e832b40f08c14629c",
+          "width": 60
+        }
+      ],
+      "name": "ITS CHRISTMAS",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjYsYzAzOWZjOTQ0MzU0NmFkYmMzZjRiZTg0NmRlYWZkMzNiYjQ2YWRlYw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2qUAaPzmbV5YzsZfZMmHeP/tracks",
+        "total": 25
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2qUAaPzmbV5YzsZfZMmHeP"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4eePVR7H93VaxLPIPluCEN"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4eePVR7H93VaxLPIPluCEN",
+      "id": "4eePVR7H93VaxLPIPluCEN",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebbaf5dbf62f7eadf1c45ce5636",
+          "width": null
+        }
+      ],
+      "name": "vibey n bangers",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDUsODU3YjgxZDIwYTQ4ZGI1MjdjZWM4Zjk1YzU2YWE5NTY0ZTE5NjRlMA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4eePVR7H93VaxLPIPluCEN/tracks",
+        "total": 41
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4eePVR7H93VaxLPIPluCEN"
+    },
+    {
+      "collaborative": false,
+      "description": "Get happy with today's dose of feel-good songs!",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0",
+      "id": "37i9dQZF1DX3rxVfibe1L0",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95",
+          "width": null
+        }
+      ],
+      "name": "Mood Booster",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTYyNjc2MzE4OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0/tracks",
+        "total": 75
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1mxJxOH3n80hUOMmazLfnS"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1mxJxOH3n80hUOMmazLfnS",
+      "id": "1mxJxOH3n80hUOMmazLfnS",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb040ff55639f809001c4e4139",
+          "width": null
+        }
+      ],
+      "name": "slow",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzIsNTk2MzEwMDEyZmUzMTk4YTcyNGY1ODk0OWY0MDA5OTA1MzYzNzg2Yw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1mxJxOH3n80hUOMmazLfnS/tracks",
+        "total": 28
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1mxJxOH3n80hUOMmazLfnS"
+    },
+    {
+      "collaborative": false,
+      "description": "The world's biggest dance hits. Featuring new music from Swedish House Mafia, Nina Kraviz, Paul Oakenfold, Toddla T & Sweetie Irie, ILLENIUM and more!",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4dyzvuaRJ0n"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dyzvuaRJ0n",
+      "id": "37i9dQZF1DX4dyzvuaRJ0n",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000003585cd2e4ae269140f9a1a13c",
+          "width": null
+        }
+      ],
+      "name": "mint",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": false,
+      "snapshot_id": "MTYyNjcxNzg3MiwwMDAwMDQ5ZjAwMDAwMTdhYmZmMGUxMmIwMDAwMDE3YWFiMGNmNWU3",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dyzvuaRJ0n/tracks",
+        "total": 96
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX4dyzvuaRJ0n"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2akE5bzEakR22GtV9OtQ9V"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2akE5bzEakR22GtV9OtQ9V",
+      "id": "2akE5bzEakR22GtV9OtQ9V",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273437e77cb00b32f05aa413975ab67616d0000b273a857fa8f0bd55a5919640fc5ab67616d0000b273d0c97444ecc52c4ca601144aab67616d0000b273eb3a6d9c69ee04f74b4250d4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273437e77cb00b32f05aa413975ab67616d0000b273a857fa8f0bd55a5919640fc5ab67616d0000b273d0c97444ecc52c4ca601144aab67616d0000b273eb3a6d9c69ee04f74b4250d4",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273437e77cb00b32f05aa413975ab67616d0000b273a857fa8f0bd55a5919640fc5ab67616d0000b273d0c97444ecc52c4ca601144aab67616d0000b273eb3a6d9c69ee04f74b4250d4",
+          "width": 60
+        }
+      ],
+      "name": "head bang vibes",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTIsZGQ5MWMxYmQwOGEyNzI2MmQ5ZjMzNTYxZjMxMjE2MWRlODZiM2NmOA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2akE5bzEakR22GtV9OtQ9V/tracks",
+        "total": 11
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2akE5bzEakR22GtV9OtQ9V"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/15lHcDcIYF7KULxeehnmOy"
+      },
+      "href": "https://api.spotify.com/v1/playlists/15lHcDcIYF7KULxeehnmOy",
+      "id": "15lHcDcIYF7KULxeehnmOy",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d72fb5571087bca0a2fed008",
+          "width": 640
+        }
+      ],
+      "name": "ham",
+      "owner": {
+        "display_name": "Brandon Erickson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/12156061751"
+        },
+        "href": "https://api.spotify.com/v1/users/12156061751",
+        "id": "12156061751",
+        "type": "user",
+        "uri": "spotify:user:12156061751"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzEsMDU0NTI1ZmM2Y2U3ODg4ZDRhNzFlNGJhZmNmMjE5ZWUyOTczM2ZmYg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/15lHcDcIYF7KULxeehnmOy/tracks",
+        "total": 27
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:15lHcDcIYF7KULxeehnmOy"
+    }
+  ],
+  "limit": 20,
+  "next": "https://api.spotify.com/v1/users/12156061751/playlists?offset=20&limit=20",
+  "offset": 0,
+  "previous": null,
+  "total": 57
+}

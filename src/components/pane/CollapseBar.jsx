@@ -1,13 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 
-const CollapseBar = ({ to, collapseClicked }) => {
+const CollapseBar = ({ to, collapseClicked, innerRef }) => {
   const jssProps = {
     size: 8,
   };
   const classes = useStyles(jssProps);
 
-  return <div className={classes[to]} onClick={collapseClicked}></div>;
+  return (
+    <div ref={innerRef} className={classes[to]} onClick={collapseClicked}></div>
+  );
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -20,9 +22,9 @@ const useStyles = makeStyles((theme) => ({
     borderRight: `${theme.palette.border.width[2]} solid transparent`,
     transitionProperty: 'border-color',
     transitionDuration: '100ms',
+    cursor: 'col-resize',
     '&:hover': {
       borderColor: theme.palette.border.color[4],
-      cursor: 'col-resize',
     },
   },
   right: {
@@ -34,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
     borderLeft: `${theme.palette.border.width[2]} solid transparent`,
     transitionProperty: 'border-color',
     transitionDuration: '100ms',
+    cursor: 'col-resize',
     '&:hover': {
       borderColor: theme.palette.border.color[4],
-      cursor: 'col-resize',
     },
   },
   top: {
@@ -48,9 +50,9 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: `${theme.palette.border.width[2]} solid transparent`,
     transitionProperty: 'border-color',
     transitionDuration: '100ms',
+    cursor: 'ns-resize',
     '&:hover': {
       borderColor: theme.palette.border.color[4],
-      cursor: 'ns-resize',
     },
   },
   bottom: {
@@ -62,11 +64,14 @@ const useStyles = makeStyles((theme) => ({
     borderTop: `${theme.palette.border.width[2]} solid transparent`,
     transitionProperty: 'border-color',
     transitionDuration: '100ms',
+    cursor: 'ns-resize',
     '&:hover': {
       borderColor: theme.palette.border.color[4],
-      cursor: 'ns-resize',
     },
   },
 }));
 
 export default CollapseBar;
+export const CollapseHandle = React.forwardRef((props, ref) => (
+  <CollapseBar innerRef={ref} {...props} />
+));

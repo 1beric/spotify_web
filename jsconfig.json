@@ -1,5 +1,6 @@
 {
   "compilerConfig": {
     "baseUrl": "src"
-  }
+  },
+  "include": ["src"]
 }
