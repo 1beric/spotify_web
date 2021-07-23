@@ -1,9 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import ListTab from '../listTab/ListTab';
 import ListTabItem from '../listTab/ListTabItem';
 import AlbumHeader from './AlbumHeader';
-import TrackItem from './TrackItem';
+import TrackList from './TrackTable';
 
 const Album = ({ album }) => {
   const classes = useStyles();
@@ -14,6 +13,7 @@ const Album = ({ album }) => {
     <div className={classes.root}>
       <div style={{ overflowY: 'auto', height: '100%' }}>
         <AlbumHeader album={album} />
+        <TrackList tracks={album.tracks.items} />
         {Object.keys(album).map((key) => {
           const value =
             typeof album[key] === 'object'

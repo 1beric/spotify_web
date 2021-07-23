@@ -17,9 +17,6 @@ const LikedTracksPreview = () => {
 
   const dispatch = useDispatch();
 
-  const handleTrackClicked = (track) =>
-    dispatch(actions.centerContent.setCurrentPage(track));
-
   const likedTracksClicked = () =>
     dispatch(
       actions.centerContent.setCurrentPage({
@@ -37,17 +34,18 @@ const LikedTracksPreview = () => {
       <div className={classes.highlightStack}>
         <TrackHighlight
           track={trackTop}
-          onTrackClicked={handleTrackClicked}
-          first={index === 0}
-          last={index + amt / 2 === tracks.length - 1}
-          bottomMargin={true}
+          rootStyle={{
+            marginLeft: index === 0 ? 0 : 8,
+            marginRight: index + amt / 2 === tracks.length - 1 ? 0 : 8,
+            marginBottom: 16,
+          }}
         />
         <TrackHighlight
           track={trackBot}
-          onTrackClicked={handleTrackClicked}
-          first={index === 0}
-          last={index + amt / 2 === tracks.length - 1}
-          bottomMargin={false}
+          rootStyle={{
+            marginLeft: index === 0 ? 0 : 8,
+            marginRight: index + amt / 2 === tracks.length - 1 ? 0 : 8,
+          }}
         />
       </div>,
     );
