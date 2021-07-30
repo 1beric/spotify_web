@@ -4,12 +4,10 @@ import Album from './Album';
 import selectors from '../../store/selectors';
 
 const TrackToAlbum = ({ track }) => {
+  console.log(track);
   const albums = useSelector(selectors.data.albums);
   const albumId = track.album.id;
-  const filteredAlbums = albums.filter((album) => albumId === album.id);
-  let album = null;
-  if (filteredAlbums.length > 0) album = filteredAlbums[0];
-
+  const album = albums.find((album) => albumId === album.id);
   return <Album album={album} />;
 };
 

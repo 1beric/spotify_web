@@ -1,9 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import { makeStyles } from '@material-ui/core';
-import PaneHeader from '../paneHeader/PaneHeader';
-import CollapseBar, { CollapseHandle } from './CollapseBar';
 import { ResizableBox } from 'react-resizable';
 import { useSelector } from 'react-redux';
+
+import PaneHeader from '../paneHeader/PaneHeader';
+import CollapseBar from './CollapseBar';
 import selectors from '../../store/selectors';
 
 const Pane = ({
@@ -64,7 +65,6 @@ const Pane = ({
       <div
         className={classes[collapseTo]}
         onMouseDown={({ clientX, clientY }) => {
-          console.log(clientX, clientY);
           setMousePos({
             x: clientX,
             y: clientY,
@@ -73,7 +73,6 @@ const Pane = ({
         onClick={({ clientX, clientY }) => {
           const distSqr =
             (clientX - mousePos.x) ** 2 + (clientY - mousePos.y) ** 2;
-          console.log(distSqr, clientX, clientY);
           if (distSqr < 25) collapsePane();
         }}
       />
@@ -115,8 +114,6 @@ const Pane = ({
       handle={collapseBar}
       width={width || 240}
       height={screenSize.height * 0.91}
-      onResizeStart={(event, size) => console.log(event, size)}
-      onResizeStop={(event, size) => console.log(event, size)}
       onResize={resize}
     >
       <div className={classes.inner}>{middle}</div>

@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    height: '7.5%',
     // justifyContent: 'center',
     // background: theme.palette.background[2],
     // borderTop: `${theme.palette.border.width[2]} solid ${theme.palette.border.color[5]}`,

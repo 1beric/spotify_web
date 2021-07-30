@@ -42,7 +42,6 @@ const Library = () => {
 
   const theme = useTheme();
   const classes = useStyles();
-  console.log(width);
   return (
     <Pane
       rootStyle={{ backgroundColor: theme.palette.background[1] }}

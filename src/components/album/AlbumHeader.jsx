@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core';
-import React from 'react';
 import { useSelector } from 'react-redux';
+import FastAverageColor from 'fast-average-color';
 import ArtistIcon from '../artist/ArtistIcon';
 import selectors from '../../store/selectors';
 
@@ -11,11 +12,21 @@ const AlbumHeader = ({ album }) => {
   const artists = albumArtists.map(
     (artist) => allArtists.find((value) => artist.id === value.id) || artist,
   );
-  // allArtists.slice(artistIndexStart, artistIndexStart + artistIndexOffset);
-  // console.log('albumArtists', albumArtists);
-  // console.log('artists', artists);
 
-  const jssProps = { cover: album ? `url(${album.images[0].url})` : '' };
+  const [backgroundColor, setBackgroundColor] = useState(undefined);
+  useEffect(() => {
+    if (album) {
+      const fac = new FastAverageColor();
+      fac
+        .getColorAsync(album.images[0].url)
+        .then((response) => setBackgroundColor(response.value));
+    }
+  }, [album]);
+
+  const jssProps = {
+    cover: album ? `url(${album.images[0].url})` : '',
+    background: backgroundColor,
+  };
   const classes = useStyles(jssProps);
 
   if (!album) return <div className={classes.root} />;
@@ -36,7 +47,11 @@ const AlbumHeader = ({ album }) => {
         <h1 className={classes.albumTitle}>{album.name}</h1>
         <div className={classes.subsection}>
           {artists.map((artist, index) => (
-            <ArtistIcon artist={artist} first={index === 0} />
+            <ArtistIcon
+              key={`artist_list_${artist.id}`}
+              artist={artist}
+              first={index === 0}
+            />
           ))}
         </div>
       </div>
@@ -46,14 +61,22 @@ const AlbumHeader = ({ album }) => {
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    backgroundColor: ({ background }) => {
+      if (background) {
+        return `rgba(${background[0] + 20},${background[1] + 20},${
+          background[2] + 20
+        }, .5)`;
+      }
+      return theme.palette.background[2];
+    },
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'flex-start',
     flexDirection: 'row',
     flexShrink: 0,
     width: '100%',
-    padding: '32px 0px',
     height: 256,
+    padding: 32,
   },
   textStack: {
     display: 'flex',
@@ -80,7 +103,6 @@ const useStyles = makeStyles((theme) => ({
   albumTitle: {
     flexShrink: 0,
     display: 'block',
-    // width: '100%',
     fontSize: theme.font.size[11],
     fontFamily: theme.font.family.subtitle,
     fontWeight: theme.font.weight[500],
@@ -99,5 +121,16 @@ const useStyles = makeStyles((theme) => ({
     color: theme.font.color[4],
   },
 }));
+
+const propTypes = {
+  album: {},
+};
+
+const defaultProps = {
+  album: {},
+};
+
+AlbumHeader.propTypes = propTypes;
+AlbumHeader.defaultProps = defaultProps;
 
 export default AlbumHeader;

@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   selected: {
-    backgroundColor: theme.palette.border.color[2],
+    backgroundColor: theme.palette.background[2],
     borderColor: theme.palette.primary.light,
   },
   unselected: {

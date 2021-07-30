@@ -1,6 +1,6 @@
 import { useTheme } from '@material-ui/core';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import Pane from '../pane/Pane';
 import selectors from '../../store/selectors';
@@ -58,6 +58,9 @@ const CenterContent = () => {
       rootStyle={{
         backgroundColor: theme.palette.background[2],
         width: paneWidth,
+      }}
+      innerStyle={{
+        padding: 0,
       }}
       collapsed={false}
       width={width}

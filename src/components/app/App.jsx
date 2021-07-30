@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import './App.css';
 import Library from '../library/Library';
@@ -15,10 +15,12 @@ import usePlaylists from '../library/usePlaylists';
 import useArtists from '../library/useArtists';
 import useAlbums from '../library/useAlbums';
 import useTracks from '../library/useTracks';
+import selectors from '../../store/selectors';
 
 function App() {
-  const isDarkMode = true;
-  const CustomThemeProvider = isDarkMode ? DarkTheme : LightTheme;
+
+
+  const isDarkMode = useSelector(selectors.settings.isDarkTheme);
 
   const dispatch = useDispatch();
 
@@ -45,7 +47,10 @@ function App() {
   useAlbums();
   useTracks();
 
-  const classes = useStyles();
+  const jssProps = {};
+  const classes = useStyles(jssProps);
+
+  const CustomThemeProvider = isDarkMode ? DarkTheme : LightTheme;
 
   return (
     <CustomThemeProvider>
