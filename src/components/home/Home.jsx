@@ -4,48 +4,46 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import selectors from '../../store/selectors';
 import ListTab from '../listTab/ListTab';
+import LikedAlbumsPreview from './LikedAlbumsPreview';
+import LikedArtistsPreview from './LikedArtistsPreview';
 import LikedTracksPreview from './LikedTracksPreview';
+import PlaylistsPreview from './PlaylistsPreview';
 // import actions from '../../store/actions';
 
 const Home = () => {
   // const friends = [];
-
-  const timeText = 'Evening';
-
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       {/* <h1 className={classes.title}>Good {timeText}</h1> */}
       {/* <ListTab title='HOME PAGE' selected={true} /> */}
+      <PlaylistsPreview />
       <LikedTracksPreview />
-      {/* Liked Songs (plus top 10 songs) */}
+      <LikedAlbumsPreview />
+      <LikedArtistsPreview />
       {/* Recently played */}
       {/* Recently released tracks/albums for followed artists */}
-      {/* Random selections 
-        | top playlists
-        | top artists
-        | top tracks
-        | top albums
-        | top genres
-        | artists similar to a top artist 
-        | top artists for top genre
-        | top playlists for top genre
-        | top tracks for top genre
-        | top tracks
+      {/* Random selections: 
+        | Top playlists
+        | Top artists
+        | Top tracks
+        | Top albums
+        | Top genres
+        | Artists similar to a top artist 
+        | Top artists for top genre
+        | Top playlists for top genre
+        | Top tracks for top genre
+        | Top tracks
         */}
     </div>
   );
 };
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
-  title: {
-    fontSize: theme.font.size[8],
-    fontFamily: theme.font.family.subtitle,
-    fontWeight: theme.font.weight[400],
-    color: theme.font.color[4],
-    padding: 16,
+  root: {
+    overflowY: 'auto',
+    height: '90%',
   },
 }));
 

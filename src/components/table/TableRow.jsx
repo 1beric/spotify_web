@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const TableRow = ({
   values,
-  onTrackSelected,
+  onSelected,
   selected,
   hoverable,
   rootStyle,
@@ -21,7 +21,7 @@ const TableRow = ({
 
   return (
     <div>
-      <div className={rootClass} onClick={onTrackSelected}>
+      <div className={rootClass} onClick={onSelected}>
         <div className={`${classes.text} ${classes.value1}`}>{values[0]}</div>
         <div className={`${classes.text} ${classes.value2}`}>{values[1]}</div>
         <div className={`${classes.text} ${classes.value3}`}>{values[2]}</div>
@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
 
 const propTypes = {
   values: [],
-  onTrackSelected: PropTypes.func,
+  onSelected: PropTypes.func,
   selected: PropTypes.boolean,
   hoverable: PropTypes.boolean,
   rootStyle: {},
@@ -120,7 +120,7 @@ const propTypes = {
 
 const defaultProps = {
   values: [],
-  onTrackSelected: () => {},
+  onSelected: () => {},
   selected: false,
   hoverable: true,
   rootStyle: {},

@@ -1,10 +1,12 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
+import Skeleton from '@material-ui/lab/Skeleton';
+
 import ListTabItem from '../listTab/ListTabItem';
 import AlbumHeader from './AlbumHeader';
 import TrackTable from '../track/TrackTable';
 
-const Album = ({ album }) => {
+const Album = ({ album, selected }) => {
   const classes = useStyles();
 
   if (!album) return <div className={classes.root} />;
@@ -13,7 +15,11 @@ const Album = ({ album }) => {
     <div className={classes.root}>
       <div style={{ overflowY: 'auto', height: '100%' }}>
         <AlbumHeader album={album} />
-        <TrackTable tracks={album.tracks.items} albumId={album.id} />
+        <TrackTable
+          tracks={album.tracks ? album.tracks.items : []}
+          albumId={album.id}
+          selected={selected}
+        />
         {Object.keys(album).map((key) => {
           const value =
             typeof album[key] === 'object'
@@ -41,7 +47,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  album: {},
+  album: null,
 };
 
 Album.propTypes = propTypes;

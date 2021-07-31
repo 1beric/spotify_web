@@ -32,3 +32,8 @@ export const history = createSelector(
   (state) => state.centerContent.history,
   (history) => history,
 );
+
+export const background = createSelector(
+  (state) => state.centerContent.background,
+  (background) => background,
+);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import actions from '../../store/actions';
+import actions from '../store/actions';
+
 const values = [
   {
     external_urls: {

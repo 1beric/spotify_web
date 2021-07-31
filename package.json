@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -22,32 +23,11 @@
     "reselect": "^4.0.0",
     "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.8.0",
-    "@babel/preset-react": "^7.8.0",
-    "babel-eslint": "^10.1.0",
-    "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "react-router-dom": "^5.1.2"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

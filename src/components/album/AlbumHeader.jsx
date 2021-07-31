@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import FastAverageColor from 'fast-average-color';
-import ArtistIcon from '../artist/ArtistIcon';
+import ArtistHighlight from '../artist/ArtistHighlight';
 import selectors from '../../store/selectors';
+import actions from '../../store/actions';
 
 const AlbumHeader = ({ album }) => {
   const albumArtists = album ? album.artists : [];
@@ -13,23 +14,32 @@ const AlbumHeader = ({ album }) => {
     (artist) => allArtists.find((value) => artist.id === value.id) || artist,
   );
 
-  const [backgroundColor, setBackgroundColor] = useState(undefined);
+  const backgroundColor = useSelector(selectors.centerContent.background);
+
+  const dispatch = useDispatch();
+
   useEffect(() => {
     if (album) {
       const fac = new FastAverageColor();
       fac
         .getColorAsync(album.images[0].url)
-        .then((response) => setBackgroundColor(response.value));
+        .then((response) =>
+          dispatch(actions.centerContent.set({ background: response.hex })),
+        );
     }
   }, [album]);
 
   const jssProps = {
-    cover: album ? `url(${album.images[0].url})` : '',
     background: backgroundColor,
   };
   const classes = useStyles(jssProps);
 
   if (!album) return <div className={classes.root} />;
+
+  const imageObj = album && album.images && album.images[0];
+  const image = imageObj
+    ? imageObj.url
+    : `${process.env.PUBLIC_URL}/blankTrack.png`;
 
   const subtitle = [album.album_type.toUpperCase(), album.release_date].join(
     ' | ',
@@ -37,20 +47,16 @@ const AlbumHeader = ({ album }) => {
 
   return (
     <div className={classes.root}>
-      <img
-        src={album.images[0].url}
-        alt={album.name}
-        className={classes.image}
-      />
+      <img src={image} alt={album.name} className={classes.img} />
       <div className={classes.textStack}>
         <h4 className={classes.subtitle}>{subtitle}</h4>
         <h1 className={classes.albumTitle}>{album.name}</h1>
         <div className={classes.subsection}>
-          {artists.map((artist, index) => (
-            <ArtistIcon
+          {artists.map((artist) => (
+            <ArtistHighlight
               key={`artist_list_${artist.id}`}
               artist={artist}
-              first={index === 0}
+              small
             />
           ))}
         </div>
@@ -63,9 +69,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: ({ background }) => {
       if (background) {
-        return `rgba(${background[0] + 20},${background[1] + 20},${
-          background[2] + 20
-        }, .5)`;
+        return background;
       }
       return theme.palette.background[2];
     },
@@ -94,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     flexShrink: 0,
   },
-  image: {
+  img: {
     flexShrink: 0,
     height: 256,
     filter: 'blur(0px)',
@@ -107,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: theme.font.family.subtitle,
     fontWeight: theme.font.weight[500],
     whiteSpace: 'nowrap',
-    color: theme.font.color[4],
+    color: theme.font.color[2],
     padding: '8px 0px',
     transition: 'transform 1s, width 1s',
   },
@@ -118,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: theme.font.family.subtitle,
     fontWeight: theme.font.weight[300],
     wordWrap: 'wrap',
-    color: theme.font.color[4],
+    color: theme.font.color[2],
   },
 }));
 

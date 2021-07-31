@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core';
 import TimerIcon from '@material-ui/icons/Timer';
 import TableRow from '../table/TableRow';
 import TrackTableRow from './TrackTableRow';
 
-const TrackTable = ({ tracks, albumId }) => {
-  const [selectedTrack, setSelectedTrack] = useState({});
+const TrackTable = ({ tracks, albumId, selected }) => {
+  const [selectedTrack, setSelectedTrack] = useState(selected || {});
 
   const classes = useStyles();
 
@@ -24,7 +24,7 @@ const TrackTable = ({ tracks, albumId }) => {
       track={track}
       onTrackSelected={setSelectedTrack}
       selected={selectedTrack.id === track.id}
-      albumId={album.id}
+      albumId={albumId}
     />
   ));
 
@@ -53,7 +53,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const propTypes = {
-  tracks: [],
+  tracks: PropTypes.array,
   albumId: PropTypes.string,
 };
 

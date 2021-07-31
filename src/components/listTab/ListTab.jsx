@@ -1,9 +1,19 @@
 import { makeStyles, useTheme } from '@material-ui/core';
 import { alpha } from '@material-ui/core/styles';
 import React from 'react';
+import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
+import PersonIcon from '@material-ui/icons/Person';
+import AlbumIcon from '@material-ui/icons/Album';
+import AudiotrackIcon from '@material-ui/icons/Audiotrack';
 
 const ListTab = ({ title, onSelect, selected }) => {
   const classes = useStyles();
+  let content = title.toUpperCase();
+  if (title === 'playlists') content = <SubscriptionsIcon />;
+  if (title === 'tracks') content = <AudiotrackIcon />;
+  if (title === 'albums') content = <AlbumIcon />;
+  if (title === 'artists') content = <PersonIcon />;
+
   return (
     <div
       className={`${classes.root} ${
@@ -11,7 +21,7 @@ const ListTab = ({ title, onSelect, selected }) => {
       }`}
       onClick={onSelect}
     >
-      {title.toUpperCase()}
+      {content}
     </div>
   );
 };

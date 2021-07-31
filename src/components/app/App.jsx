@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import './App.css';
-import Library from '../library/Library';
+import LibrarySidebar from '../librarySidebar/LibrarySidebar';
 import LightTheme from '../themeProviders/LightTheme';
 import DarkTheme from '../themeProviders/DarkTheme';
 import SocialPane from '../social/SocialPane';
@@ -11,15 +11,13 @@ import BottomNav from '../bottomMedia/BottomMediaBar';
 import CenterContent from '../centerContent/CenterContent';
 
 import actions from '../../store/actions';
-import usePlaylists from '../library/usePlaylists';
-import useArtists from '../library/useArtists';
-import useAlbums from '../library/useAlbums';
-import useTracks from '../library/useTracks';
+import usePlaylists from '../../hooks/usePlaylists';
+import useArtists from '../../hooks/useArtists';
+import useAlbums from '../../hooks/useAlbums';
+import useTracks from '../../hooks/useTracks';
 import selectors from '../../store/selectors';
 
 function App() {
-
-
   const isDarkMode = useSelector(selectors.settings.isDarkTheme);
 
   const dispatch = useDispatch();
@@ -56,7 +54,7 @@ function App() {
     <CustomThemeProvider>
       <div className={classes.root}>
         <div className={classes.row}>
-          <Library />
+          <LibrarySidebar />
           <CenterContent />
           <SocialPane />
         </div>

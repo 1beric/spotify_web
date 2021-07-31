@@ -10,14 +10,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import selectors from '../../store/selectors';
 import actions from '../../store/actions';
 
-const Library = () => {
+const LibrarySidebar = () => {
   const collapsed = useSelector(selectors.library.collapsed);
   const width = useSelector(selectors.library.paneWidth);
   const playlists = useSelector(selectors.data.playlists);
   const albums = useSelector(selectors.data.albums);
   const artists = useSelector(selectors.data.artists);
+  const tracks = useSelector(selectors.data.tracks);
   const contentTabItems = {
     playlists: playlists,
+    tracks: tracks,
     artists: artists,
     albums: albums,
   };
@@ -45,8 +47,8 @@ const Library = () => {
   return (
     <Pane
       rootStyle={{ backgroundColor: theme.palette.background[1] }}
-      title='Library'
-      collapseTo='left'
+      title="Library"
+      collapseTo="left"
       collapsed={collapsed}
       setCollapsed={setCollapsed}
       width={width}
@@ -102,4 +104,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default Library;
+export default LibrarySidebar;

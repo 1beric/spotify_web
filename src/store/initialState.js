@@ -22,6 +22,7 @@ const state = {
       back: [],
       forward: [],
     },
+    background: null,
   },
   media: {
     currentSong: null,

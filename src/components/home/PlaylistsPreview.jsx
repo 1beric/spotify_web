@@ -1,37 +1,35 @@
-import { Badge, makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import AudiotrackIcon from '@material-ui/icons/Audiotrack';
+import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 
 import selectors from '../../store/selectors';
 import actions from '../../store/actions';
-import TrackHighlight from '../track/TrackHighlight';
+import PlaylistHighlight from '../playlist/PlaylistHighlight';
 // import actions from '../../store/actions';
 
-const LikedTracksPreview = () => {
-  // const friends = [];
-
-  const tracks = useSelector(selectors.data.tracks).slice(0, 20);
+const PlaylistsPreview = () => {
+  const playlists = useSelector(selectors.data.playlists).slice(0, 20);
 
   const dispatch = useDispatch();
 
-  const likedTracksClicked = () =>
+  const likedPlaylistsClicked = () =>
     dispatch(
       actions.centerContent.setCurrentPage({
-        type: 'liked_tracks',
+        type: 'playlists',
       }),
     );
 
   const classes = useStyles();
 
   const renderHighlights = () =>
-    tracks.map((track) => <TrackHighlight track={track} />);
+    playlists.map((playlist) => <PlaylistHighlight playlist={playlist} />);
 
   return (
     <div className={classes.root}>
-      <div className={classes.header} onClick={likedTracksClicked}>
-        <AudiotrackIcon id="liked_tracks_icon" className={classes.icon} />
-        <h2 className={classes.titleText}>Liked Tracks</h2>
+      <div className={classes.header} onClick={likedPlaylistsClicked}>
+        <SubscriptionsIcon id="liked_playlists_icon" className={classes.icon} />
+        <h2 className={classes.titleText}>Playlists</h2>
       </div>
       <div className={classes.highlights}>{renderHighlights()}</div>
     </div>
@@ -85,4 +83,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default LikedTracksPreview;
+export default PlaylistsPreview;
